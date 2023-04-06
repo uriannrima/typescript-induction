@@ -13,7 +13,7 @@
 ```json
 {
   "compilerOptions": {
-    "lib": ["ESNext"],
+    "lib": ["ESNext", "DOM"],
     "module": "esnext",
     "target": "esnext",
     "moduleResolution": "nodenext",
@@ -23,9 +23,8 @@
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "allowJs": true,
-    "types": [
-      "bun-types" // add Bun global
-    ]
+    "noEmit": true,
+    "types": []
   }
 }
 ```
@@ -147,6 +146,8 @@ The "as" keyword exists and should be used but with in the places where we don't
 
 First, a quick look at our TypeScript types using "Set Theory" (without any and unknown):
 
+(Credits:
+Vladimir Klepov @ Making sense of TypeScript using set theory @ [thoughtspile](https://blog.thoughtspile.tech/2023/01/23/typescript-sets/))
 ![Typescript World](./everything.png)
 
 Considering that, we could say:
