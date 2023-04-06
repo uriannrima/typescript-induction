@@ -1,0 +1,11 @@
+{
+  "name": "06042023",
+  "module": "index.ts",
+  "type": "commonjs",
+  "devDependencies": {
+    "typescript": "^5.0.3"
+  },
+  "scripts": {
+    "compile": "tsc"
+  }
+}
